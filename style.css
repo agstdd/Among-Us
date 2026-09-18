@@ -167,7 +167,9 @@ header{
 .nav-links a:hover{ color: var(--highlight); opacity: 1; }
 
 @media (max-width: 768px){
-  .nav-links{ display:none; }
+  header{ flex-wrap: wrap; justify-content: center; gap: 12px; row-gap: 8px; }
+  .nav-links{ flex-wrap: wrap; justify-content: center; gap: 16px 24px; width: 100%; }
+  .nav-links a{ font-size: 14px; }
 }
 
 /* =========================================================
@@ -468,6 +470,8 @@ footer{
   .roles-heading h2{ padding: 8px 20px; }
 
   #emergency-meeting .meeting-icon{ margin-top: -30px; }
+
+  #mission img[alt="lore card"]{ margin-top: 35px; }
 }
 
 /* ---------- Small phones (~480px and below) ---------- */
@@ -496,4 +500,9 @@ footer{
   .logo a{ font-size: 22px; }
 
   #emergency-meeting .meeting-icon{ margin-top: -14px; }
+
+  .nav-links{ gap: 10px 16px; }
+  .nav-links a{ font-size: 13px; }
+
+  #mission img[alt="lore card"]{ margin-top: 55px; }
 }
