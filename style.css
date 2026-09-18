@@ -1,35 +1,27 @@
-/* =========================================================
-   AMONG US — LANDING PAGE TEMPLATE
-   Built from: Colors design-system sheet + Typography sheet
-   ========================================================= */
+/* AMONG US — LANDING PAGE TEMPLATE */
 
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
 
-/* ---------- DESIGN TOKENS ---------- */
+/* Design tokens */
 :root{
-  /* Brand / Primary */
-  --surface:        #0B1428;                 /* page background            */
-  --card-bg:        rgba(255,255,255,0.15);  /* "see-thru" card background */
+  --surface:        #0B1428;
+  --card-bg:        rgba(255,255,255,0.15);
   --text-primary:   #F7F9FF;
   --text-secondary: #AAB6C8;
-  --impostor:       #E63946;                 /* red accent   */
-  --cosmic:         #8B6CFF;                 /* purple accent */
-  --highlight:      #63C7FF;                 /* blue accent  */
+  --impostor:       #E63946;
+  --cosmic:         #8B6CFF;
+  --highlight:      #63C7FF;
 
-  /* Borders */
   --border-blue:    #2F80ED;
   --border-white:   rgba(170,182,200,0.5);
   --border-w:       2px;
 
-  /* Radius */
   --radius-card:    16px;
   --radius-pill:    999px;
 
-  /* Section padding — desktop */
   --pad-y: 120px;
   --pad-x: 64px;
 
-  /* Type */
   --font-display: 'Amatic SC', cursive;
   --font-body:    'Roboto', sans-serif;
 }
@@ -41,7 +33,7 @@
   }
 }
 
-/* ---------- RESET ---------- */
+/* Reset */
 *, *::before, *::after{ box-sizing: border-box; }
 html{ scroll-behavior: smooth; }
 body{
@@ -59,7 +51,7 @@ img{ max-width: 100%; display: block; }
 ul{ list-style: none; margin: 0; padding: 0; }
 a{ color: inherit; text-decoration: none; }
 
-/* ---------- TYPE SCALE ---------- */
+/* Type scale */
 h1, h2, h3{
   font-family: var(--font-display);
   font-weight: 700;
@@ -85,7 +77,7 @@ p{
   h3{ font-size: 24px; }
 }
 
-/* ---------- BUTTONS ---------- */
+/* Buttons */
 .btn{
   font-family: var(--font-body);
   font-weight: 700;
@@ -116,7 +108,7 @@ p{
 }
 .btn-secondary:hover{ background: rgba(255,255,255,.08); }
 
-/* ---------- LAYOUT / SECTION SHELL ---------- */
+/* Layout / section shell */
 .section{
   padding: var(--pad-y) var(--pad-x);
   position: relative;
@@ -126,7 +118,7 @@ p{
   margin: 0 auto;
 }
 
-/* ---------- CARDS (see-thru style) ---------- */
+/* Cards */
 .card{
   background: var(--card-bg);
   border: var(--border-w) solid var(--border-white);
@@ -134,9 +126,7 @@ p{
   padding: 32px;
 }
 
-/* =========================================================
-   HEADER / NAV
-   ========================================================= */
+/* Header / nav */
 header{
   position: sticky;
   top: 0;
@@ -167,12 +157,12 @@ header{
 .nav-links a:hover{ color: var(--highlight); opacity: 1; }
 
 @media (max-width: 768px){
-  .nav-links{ display:none; }
+  header{ flex-wrap: wrap; justify-content: center; gap: 12px; row-gap: 8px; }
+  .nav-links{ flex-wrap: wrap; justify-content: center; gap: 16px 24px; width: 100%; }
+  .nav-links a{ font-size: 14px; }
 }
 
-/* =========================================================
-   HERO
-   ========================================================= */
+/* Hero */
 #hero{
   display: flex;
   align-items: center;
@@ -207,9 +197,7 @@ header{
   .hero-image{ width: 320px; }
 }
 
-/* =========================================================
-   FEATURES
-   ========================================================= */
+/* Features */
 #features{ text-align: center; }
 #features h2{
   max-width: 1300px;
@@ -236,9 +224,7 @@ header{
   .feature-cards{ grid-template-columns: 1fr; }
 }
 
-/* =========================================================
-   MISSION
-   ========================================================= */
+/* Mission */
 #mission{
   background: transparent;
 }
@@ -270,19 +256,14 @@ header{
   .mission-steps{ grid-template-columns: repeat(2, 1fr); }
 }
 
-/* =========================================================
-   EMERGENCY MEETING BANNER
-   ========================================================= */
-
+/* Emergency meeting banner */
 #emergency-meeting .meeting-icon {
     width: 1800px;
     margin: -56px auto 0;
     position: relative;
 }
 
-/* =========================================================
-   ROLES
-   ========================================================= */
+/* Roles */
 #roles{ text-align: center; }
 .roles-heading{
   display: flex;
@@ -354,9 +335,7 @@ header{
   color: var(--text-primary);
 }
 
-/* =========================================================
-   DOWNLOAD CTA
-   ========================================================= */
+/* Download CTA */
 #download{
   text-align: center;
   background: transparent;
@@ -368,9 +347,7 @@ header{
 }
 #download .download-buttons{ justify-content: center; }
 
-/* =========================================================
-   FOOTER
-   ========================================================= */
+/* Footer */
 footer{
   padding: 64px var(--pad-x) 40px;
   border-top: var(--border-w) solid var(--border-white);
@@ -419,9 +396,7 @@ footer{
   footer{ justify-content: center; text-align: center; }
 }
 
-/* =========================================================
-   MISSION ROCKET (background layer)
-   ========================================================= */
+/* Mission rocket (background layer) */
 #mission{ position: relative; overflow: hidden; }
 
 .mission-rocket{
@@ -443,34 +418,18 @@ footer{
   .mission-rocket{ opacity: .5; }
 }
 
-/* =========================================================
-   MOBILE RESPONSIVE ENHANCEMENTS
-   Everything below is ADDED ONLY — nothing above this line
-   was changed, moved, or removed.
-   ========================================================= */
-
-/* ---------- Tablet & below: fixes for rules that don't
-   scale on their own (needed regardless of screen size) ---------- */
+/* Mobile responsive enhancements */
 @media (max-width: 768px){
-  /* #features h2 sets its own font-size, which is more specific
-     than the base "h2" mobile rule above, so it never shrank */
   #features h2{ font-size: 34px; }
-
-  /* .banner-img uses a fixed px max-width, which can exceed the
-     screen width on narrow devices */
   .banner-img{ max-width: 100%; }
-
-  /* Store badge icons have no size cap and can render huge */
   .hero-text .download-buttons img{ max-width: 140px; }
-
   .logo a{ font-size: 26px; }
-
   .roles-heading h2{ padding: 8px 20px; }
-
   #emergency-meeting .meeting-icon{ margin-top: -30px; }
+  #mission img[alt="lore card"]{ margin-top: 35px; }
 }
 
-/* ---------- Small phones (~480px and below) ---------- */
+/* Small phones (~480px and below) */
 @media (max-width: 480px){
   :root{
     --pad-y: 48px;
@@ -496,4 +455,9 @@ footer{
   .logo a{ font-size: 22px; }
 
   #emergency-meeting .meeting-icon{ margin-top: -14px; }
+
+  .nav-links{ gap: 10px 16px; }
+  .nav-links a{ font-size: 13px; }
+
+  #mission img[alt="lore card"]{ margin-top: 55px; }
 }
