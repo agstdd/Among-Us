@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Among Us</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- HEADER / NAV -->
   <header>
+    <div class="logo">
+      <a href="/">Among Us</a>
+    </div>
     <nav>
-      <div class="logo">
-        <a href="/">Among Us</a>
-      </div>
       <ul class="nav-links">
         <li><a href="#download">Download</a></li>
         <li><a href="#about">About</a></li>
@@ -25,144 +26,160 @@
   <main>
 
     <!-- HERO SECTION -->
-    <section id="hero">
+    <section id="hero" class="section">
       <div class="hero-text">
         <h1>Among Us</h1>
         <p class="tagline">Trust no one. Complete your tasks. Find the impostor... or are you?</p>
         <div class="download-buttons">
-          <a href="#" class="btn-store">Get it on Google Play</a>
-          <a href="#" class="btn-store">Download from Windows Store</a>
-          <a href="#" class="btn-store">Download on the App Store</a> <div class="hero-image">
-        <img src="" alt="Among Us crewmates illustration">
+          <img src="assets/Google Play.png" alt="Google Play">
+          <img src="assets/Window Store.png" alt="Window Store">
+          <img src="assets/App Store.png" alt="App Store">
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/hero-amogus-photo.png" alt="Among Us crewmates illustration">
       </div>
     </section>
 
     <!-- FEATURES SECTION -->
-    <section id="features">
-      <h2>COMPLETE TASKS, UNCOVER IMPOSTORS, AND SURVIVE THE MISSION.</h2>
-      <div class="feature-cards">
-        <article class="feature-card">
-          <img src="" alt="Crewmates task image">
-          <h3>Crewmates Task</h3>
-          <p>Complete tasks around the spaceship while working with other players.</p>
-        </article>
-        <article class="feature-card">
-          <img src="" alt="Find the impostor image">
-          <h3>Find the Impostor</h3>
-          <p>Observe suspicious behavior, discuss clues, and vote to identify the Impostor.</p>
-        </article>
-        <article class="feature-card">
-          <img src="" alt="Teamwork and deception image">
-          <h3>Teamwork & Deception</h3>
-          <p>Cooperate with other players—or deceive them—to achieve your objective.</p>
-        </article>
+    <section id="features" class="section">
+      <div class="section-inner">
+        <h2>Complete tasks, uncover impostors, and survive the mission.</h2>
+        <div class="feature-cards">
+          <article class="feature-card card">
+                <img src="assets/CREWMATES TASK.png" alt="Crewmates Task">
+          </article>
+
+          <article class="feature-card card">
+                <img src="assets/FIND THE IMPOSTOR.png" alt="Find the Impostor">
+          </article>
+
+          <article class="feature-card card">
+                <img src="assets/TEAMWORK & DECEPTION.png" alt="Teamwork and Deception">
+          </article>
+        </div>
       </div>
     </section>
 
     <!-- MISSION SECTION -->
-    <section id="mission">
-      <h2>A Mission Full of Suspicion.</h2>
-      <p class="mission-description">
-        Players take on the roles of Crewmates or Impostors aboard a spaceship.
-        Crewmates must complete their assigned tasks and identify the Impostors,
-        while Impostors must secretly eliminate Crewmates and sabotage the mission
-        without being discovered.
-      </p>
+    <section id="mission" class="section">
+            <img class="mission-rocket" src="assets/Rocket.png" alt="Rocket flying through space">
+      <div class="section-inner">
+        <h2>A Mission Full of Suspicion.</h2>
+        <img src="assets/lore card.png" alt="lore card">
 
-      <h3>The Mission</h3>
-      <ul class="mission-steps">
-        <li>
-          <img src="" alt="Complete tasks icon">
-          <p>Complete tasks around the spaceship.</p>
-        </li>
-        <li>
-          <img src="" alt="Report suspicious activity icon">
-          <p>Report suspicious activity.</p>
-        </li>
-        <li>
-          <img src="" alt="Discuss and vote icon">
-          <p>Discuss and vote during meetings.</p>
-        </li>
-        <li>
-          <img src="" alt="Identify the impostors icon">
-          <p>Identify the Impostors before it is too late.</p>
-        </li>
-      </ul>
+        <h3>The Mission</h3>
+        <ul class="mission-steps">
+          <li>
+            <img src="assets/Complete Task.png" alt="Complete Task">
+            <p>Complete tasks around the spaceship.</p>
+          </li>
+          <li>
+            <img src="assets/Report Suspicious Activity.png" alt="Report Suspicious Activity">            <p>Report suspicious activity.</p>
+          </li>
+          <li>
+            <img src="assets/Discuss and Vote.png" alt="Discuss and Vote">
+            <p>Discuss and vote during meetings.</p>
+          </li>
+          <li>
+            <img src="assets/Identify the Impostor.png" alt="Identify the Impostor">
+            <p>Identify the Impostors before it is too late.</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!-- EMERGENCY MEETING BANNER -->
     <section id="emergency-meeting">
-      <h2>EMERGENCY MEETING</h2>
-      <img src="" alt="Emergency meeting button image">
+    <img class="meeting-icon" src="assets/Emergency Meeting.png" alt="Emergency Meeting">
     </section>
 
     <!-- ROLES SECTION -->
-    <section id="roles">
+    <section id="roles" class="section">
       <div class="roles-heading">
-        <h2>MEET THE CREWS & IMPOSTORS</h2>
-        <p>Every role brings a unique ability that can change the outcome of the mission.</p>
+        <img src="assets/media gallegy header.png" alt="Meet the Crews & Impostor">
       </div>
 
       <div class="crew-roles">
-        <h3>The Crew</h3>
+        <img src="assets/steam_AboutCrew-copy-e1629741065184.png.png" alt="The Crews" class="banner-img">
         <ul class="role-cards">
-          <li>
-            <img src="" alt="Scientist role icon">
-            <span>Scientist</span>
+          <li class="role-card">
+            <div class="role-photo">
+              <img src="assets/Scientist.png" alt="Scientist">
+            </div>
+            <div class="role-label"><span>Scientist</span></div>
           </li>
-          <li>
-            <img src="" alt="Engineer role icon">
-            <span>Engineer</span>
+          <li class="role-card">
+            <div class="role-photo">
+              <img src="assets/Engineer.png" alt="Engineer">
+            </div>
+            <div class="role-label"><span>Engineer</span></div>
           </li>
-          <li>
-            <img src="" alt="Guardian Angel role icon">
-            <span>Guardian Angel</span>
+          <li class="role-card">
+            <div class="role-photo">
+              <img src="assets/Guardian angel.png" alt="Tracker">
+            </div>
+            <div class="role-label"><span>Guardian Angel</span></div>
           </li>
-          <li>
-            <img src="" alt="Tracker role icon">
-            <span>Tracker</span>
+          <li class="role-card">
+            <div class="role-photo">
+              <img src="assets/tracker.png" alt="Tracker">
+            </div>
+            <div class="role-label"><span>Tracker</span></div>
           </li>
-          <li>
-            <img src="" alt="Noisemaker role icon">
-            <span>Noisemaker</span>
+          <li class="role-card">
+            <div class="role-photo">
+              <img src="assets/noisemaker.png" alt="Noisemaker">
+            </div>
+            <div class="role-label"><span>Noisemaker</span></div>
           </li>
-          <li>
-            <img src="" alt="Detective role icon">
-            <span>Detective</span>
+          <li class="role-card">
+            <div class="role-photo">
+              <img src="assets/detective.png" alt="Detective">
+            </div>
+            <div class="role-label"><span>Detective</span></div>
           </li>
-          <li>
-            <img src="" alt="Judge role icon">
-            <span>Judge</span>
+          <li class="role-card">
+            <div class="role-photo">
+              <img src="assets/judg.png" alt="Judge">
+            </div>
+            <div class="role-label"><span>Judge</span></div>
           </li>
         </ul>
       </div>
 
       <div class="impostor-roles">
-        <h3>The Impostor</h3>
+        <img src="assets/steam_AboutImpostor-copy-e1629741082923.png.png" alt="The Impostor" class="banner-img">
         <ul class="role-cards">
-          <li>
-            <img src="" alt="Shapeshifter role icon">
-            <span>Shapeshifter</span>
+          <li class="role-card impostor">
+            <div class="role-photo">
+              <img src="assets/shapeshifter.png" alt="Shapeshifter">
+            </div>
+            <div class="role-label"><span>Shapeshifter</span></div>
           </li>
-          <li>
-            <img src="" alt="Phantom role icon">
-            <span>Phantom</span>
+          <li class="role-card impostor">
+            <div class="role-photo">
+              <img src="assets/phantom.png" alt="Phantom">
+            </div>
+            <div class="role-label"><span>Phantom</span></div>
           </li>
-          <li>
-            <img src="" alt="Viper role icon">
-            <span>Viper</span>
+          <li class="role-card impostor">
+            <div class="role-photo">
+              <img src="assets/viper.png" alt="Viper">
+            </div>
+            <div class="role-label"><span>Viper</span></div>
           </li>
         </ul>
       </div>
     </section>
 
     <!-- DOWNLOAD CTA SECTION -->
-    <section id="download">
+    <section id="download" class="section">
       <h2>Download Now</h2>
       <p>Work with Crewmates, finish your tasks, or eliminate them as the Impostor before they find out.</p>
       <div class="download-buttons">
-        <a href="#" class="btn-store">Get it on Google Play</a>
-        <a href="#" class="btn-store">Download on the Appstore</a>
+        <a href="#" class="btn btn-cta">Get it on Google Play</a>
+        <a href="#" class="btn btn-secondary">Download on the App Store</a>
       </div>
     </section>
 
@@ -176,12 +193,12 @@
       <li><a href="#mission">Learn more</a></li>
       <li><a href="#support">Support</a></li>
     </ul>
-    <p class="footer-copy">&copy; 2026 Among Us Landing Page. For educational purposes.</p>
     <ul class="social-links">
-      <li><a href="#">Instagram</a></li>
-      <li><a href="#">Facebook</a></li>
-      <li><a href="#">X</a></li>
+      <li><a href="#"><img src="assets/Instagram.png" alt="Instagram"></a></li>
+      <li><a href="#"><img src="assets/FB.png" alt="FB"></a></li>
+      <li><a href="#"><img src="assets/X.png" alt="X"></a></li>
     </ul>
+    <p class="footer-copy">&copy; 2026 Among Us Landing Page. For educational purposes.</p>
   </footer>
 
 </body>
